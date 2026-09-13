@@ -37,7 +37,7 @@ Result: 3 matches, one per pinion socket, all reporting exact fit (0.4 mm cleara
 
 ![Chuck Key selection](images/lathe_selection.png)
 ![Chuck matches (lathe)](images/lathe_matches.png)
-![Chuck](lathe_matches_repos.png)
+![Chuck](images/lathe_matches_repos.png)
 
 To debug, separated the chuck from the rest of the assembly and ran it across that with the same key and face IDs:
 
