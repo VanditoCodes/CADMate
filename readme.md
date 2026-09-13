@@ -4,7 +4,7 @@ Given a set of faces selected on a part, finds every place in a STEP assembly wh
 
 ## What it does
 
-- Takes a single-part STEP file and a list of face IDs as the selection (how do you get the face IDs? readon! I tried to implement a 3D viewer where you can click on faces to select them, but that was taking too much time :p)
+- Takes a single-part STEP file and a list of face IDs as the selection (how do you get the face IDs? read on! I tried to implement a 3D viewer where you can click on faces to select them, but that was taking too much time :p)
 - Searches a STEP assembly for every face group that geometrically mates with the selection
 - Finds all matching instances, not just the first
 - Classifies each match as an exact fit or a clearance fit (clearance fit needs some more testing)
@@ -37,6 +37,7 @@ Result: 3 matches, one per pinion socket, all reporting exact fit (0.4 mm cleara
 
 ![Chuck Key selection](images/lathe_selection.png)
 ![Chuck matches (lathe)](images/lathe_matches.png)
+![Chuck](lathe_matches_repos.png)
 
 To debug, separated the chuck from the rest of the assembly and ran it across that with the same key and face IDs:
 
