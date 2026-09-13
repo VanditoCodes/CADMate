@@ -1,3 +1,7 @@
 stepfiles/
 rejected step files/
 facerenders/
+
+!stepfiles/rod.step
+!stepfiles/key_shaft.step
+!stepfiles/hub.step

@@ -106,7 +106,7 @@ python mating.py
 
 To switch cases, edit the `test = samples[...]` line in `__main__` to one of: `rod`, `keyshaft`, `lathe`, `onlychuck`.
 
-Selection face IDs were identified using `inspection.py`:
+Identify face IDs using `inspection.py`:
 
 ```python
 from inspection import select_faces, print_faces
@@ -117,6 +117,16 @@ select_faces("stepfiles/only_key.step", kind="plane", area=(80, 90))
 
 I created `rod.step`, `key_shaft.step`, and `hub.step` (clearance as well) myself on FreeCAD, those are uploaded.
 
-`only_key.step` and `onlychuck.step` were extracted from the lathe assembly. The full lathe assembly (`WM290V_RedrawStart.stp`) is not included in this repository due to licensing. Download it from [source] and place it in `stepfiles/` to run the `lathe` test case.
+`only_key.step` and `onlychuck.step` were extracted from the lathe assembly.
 
 ## Requirements
+
+pythonocc-core==7.7.2
+numpy
+
+Install via conda (recommended):
+```bash
+conda install -c conda-forge pythonocc-core numpy
+```
+
+Tested on Python 3.10.
